@@ -1,0 +1,212 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --light: #ecf0f1;
+    --dark: #1a252f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    background: var(--primary);
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção Hero */
+#hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Seção Sobre */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary);
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Seção Habilidades */
+#skills {
+    background: var(--light);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+/* Seção Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-links a {
+    margin-right: 1rem;
+    color: var(--secondary);
+}
+
+/* Seção Contato */
+#contact {
+    background: var(--primary);
+    color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.contact-card a:hover {
+    color: var(--secondary);
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
